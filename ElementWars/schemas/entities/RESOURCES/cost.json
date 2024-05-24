@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Cost",
+  "type": "object",
+  "properties": {
+    "NATURAL_CRYSTAL": {
+      "type": "integer"
+    },
+    "EARTH_CRYSTAL": {
+      "type": "integer"
+    },
+    "FLAME_CRYSTAL": {
+      "type": "integer"
+    },
+    "WATER_CRYSTAL": {
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false
+}

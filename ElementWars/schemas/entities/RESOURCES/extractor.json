@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Extractor",
+  "type": "object",
+  "definitions": {
+    "resource": {
+      "type": "object",
+      "properties": {
+        "min": {
+          "type": "integer"
+        },
+        "max": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "min",
+        "max"
+      ]
+    }
+  },
+  "patternProperties": {
+    ".*": {
+      "properties": {
+        "blocks": {
+          "type": "string"
+        },
+        "resources": {
+          "type": "object",
+          "properties": {
+            "NATURAL_CRYSTAL": {
+              "$ref": "#/definitions/resource"
+            },
+            "EARTH_CRYSTAL": {
+              "$ref": "#/definitions/resource"
+            },
+            "FLAME_CRYSTAL": {
+              "$ref": "#/definitions/resource"
+            },
+            "WATER_CRYSTAL": {
+              "$ref": "#/definitions/resource"
+            }
+          },
+          "additionalProperties": false
+        },
+        "swap": {
+          "type": "string"
+        },
+        "unions": {
+          "type": "string"
+        },
+        "extractor": {
+          "type": "string"
+        },
+        "recovery": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "seconds": {
+              "type": "integer"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false,
+      "required": ["blocks", "unions", "resources", "swap", "extractor"]
+    }
+  }
+}

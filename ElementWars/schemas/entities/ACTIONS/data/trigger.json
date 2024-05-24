@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Trigger",
+  "type": "object",
+  "patternProperties": {
+    ".*\\?AND$": {
+      "$ref": "#"
+    },
+    ".*\\?OR$": {
+      "$ref": "#"
+    },
+    ".*": {
+      "type": "boolean",
+      "description": "true - значение условия берётся по умолчанию. false - значение условия будет инвертировано.",
+      "default": true
+    }
+  }
+}

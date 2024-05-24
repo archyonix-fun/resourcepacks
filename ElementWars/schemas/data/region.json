@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Region",
+  "type": "object",
+  "properties": {
+    "startPoint": {
+      "type": "string"
+    },
+    "endPoint": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "startPoint",
+    "endPoint"
+  ],
+  "additionalProperties": false
+}

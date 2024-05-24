@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GameItem",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "union": {
+      "type": "string"
+    },
+    "default": {
+      "$ref": "variants.json#/definitions/variant"
+    },
+    "variants": {
+      "type": "object",
+      "properties": {
+        "DEFAULT": {
+          "$ref": "variants.json#/definitions/variant"
+        },
+        "T0": {
+          "$ref": "variants.json#/definitions/variant"
+        },
+        "T1": {
+          "$ref": "variants.json#/definitions/variant"
+        },
+        "T2": {
+          "$ref": "variants.json#/definitions/variant"
+        },
+        "T3": {
+          "$ref": "variants.json#/definitions/variant"
+        },
+        "T4": {
+          "$ref": "variants.json#/definitions/variant"
+        }
+      },
+      "additionalProperties": false
+    },
+    "actions": {
+      "patternProperties": {
+        ".*": {
+          "$ref": "../ACTIONS/index.json"
+        }
+      }
+    }
+  },
+  "required": [
+    "id",
+    "variants"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Area",
+  "type": "object",
+  "properties": {
+    "height": {
+      "type": "integer"
+    },
+    "size": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "height",
+    "size"
+  ],
+  "additionalProperties": false
+}

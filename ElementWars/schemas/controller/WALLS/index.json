@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Walls",
+  "type": "object",
+  "properties": {
+    "samples": {
+      "type": "object",
+      "pattern": "^[ A-Z0-9]+$",
+      "patternProperties": {
+        ".*": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "string"
+            },
+            "gateConfig": {
+              "type": "object",
+              "properties": {
+                "schema": {
+                  "type": "string"
+                },
+                "block": {
+                  "type": "string"
+                },
+                "openDistance": {
+                  "type": "integer"
+                },
+                "region": {
+                  "$ref": "../../data/region.json"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "schema",
+                "block",
+                "region"
+              ]
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "schema"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "places": {
+      "type": "object",
+      "properties": {
+        "NORTH_WEST": {
+          "type": "object",
+          "properties": {
+            "extension": {
+              "type": "string"
+            },
+            "sample": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "extension",
+            "sample"
+          ]
+        },
+        "NORTH": {
+          "$ref": "#/properties/places/properties/NORTH_WEST"
+        },
+        "EAST_NORTH": {
+          "$ref": "#/properties/places/properties/NORTH_WEST"
+        },
+        "EAST": {
+          "$ref": "#/properties/places/properties/NORTH_WEST"
+        },
+        "SOUTH_EAST": {
+          "$ref": "#/properties/places/properties/NORTH_WEST"
+        },
+        "SOUTH": {
+          "$ref": "#/properties/places/properties/NORTH_WEST"
+        },
+        "WEST_SOUTH": {
+          "$ref": "#/properties/places/properties/NORTH_WEST"
+        },
+        "WEST": {
+          "$ref": "#/properties/places/properties/NORTH_WEST"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "required": ["samples", "places"]
+}

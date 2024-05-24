@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Variant",
+  "enum": [
+    "DEFAULT",
+    "T0",
+    "T1",
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "definitions": {
+    "variant": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "array"
+        },
+        "material": {
+          "type": "string"
+        },
+        "texture": {
+          "type": "string"
+        },
+        "recharge": {
+          "type": "integer"
+        },
+        "flags": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "enum": [
+                  "TOOL",
+                  "OTHER",
+                  "WEAPON_MELEE",
+                  "WEAPON_RANGE"
+                ]
+              }
+            ]
+          }
+        },
+        "properties": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

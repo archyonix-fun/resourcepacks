@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Extensions",
+  "type": "object",
+  "pattern": "^[ A-Z0-9]+$",
+  "patternProperties": {
+    ".*": {
+      "$ref": "../../data/region.json"
+    }
+  },
+  "additionalProperties": false
+}
