@@ -22,7 +22,7 @@
         "material": {
           "type": "string"
         },
-        "texture": {
+        "icon": {
           "type": "string"
         },
         "recharge": {
