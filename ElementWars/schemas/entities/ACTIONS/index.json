@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "executor": {
-      "$ref": "executors.json"
+      "type": "string"
     },
     "trigger": {
       "$ref": "data/trigger.json"

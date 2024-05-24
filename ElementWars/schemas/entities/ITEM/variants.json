@@ -43,6 +43,13 @@
             ]
           }
         },
+        "actions": {
+          "patternProperties": {
+            ".*": {
+              "$ref": "../ACTIONS/index.json"
+            }
+          }
+        },
         "properties": {
           "type": "object",
           "additionalProperties": true
