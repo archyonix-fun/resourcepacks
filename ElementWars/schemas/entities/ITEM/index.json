@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://github.com/archyonix-fun/resources/ElementalWars/schemas/item/2024/05/24/22-09",
   "title": "GameItem",
   "type": "object",
   "properties": {
