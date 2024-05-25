@@ -3,6 +3,22 @@
   <component name="JsonSchemaMappingsProjectConfiguration">
     <state>
       <map>
+        <entry key="Team">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="Team" />
+              <option name="relativePathToSchema" value="ElementWars/schemas/entities/TEAM/index.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="file://$PROJECT_DIR$/../ElementWarsKt/config/teams.yaml" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
         <entry key="Trigger">
           <value>
             <SchemaInfo>
@@ -13,6 +29,22 @@
                 <list>
                   <Item>
                     <option name="path" value="ElementWars/test.yaml" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="UI">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="UI" />
+              <option name="relativePathToSchema" value="ElementWars/schemas/entities/UI/index.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="file://$PROJECT_DIR$/../ElementWarsKt/config/structures/tower/ui/gate-available.yaml" />
                   </Item>
                 </list>
               </option>

@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://github.com/archyonix-fun/resources/ElementalWars/schemas/team/2024/05/25/17-26",
+  "title": "Team",
+  "type": "object",
+  "definitions": {
+    "bannerColor": {
+      "enum": [
+        "WHITE",
+        "ORANGE",
+        "MAGENTA",
+        "LIGHT_BLUE",
+        "YELLOW",
+        "LIME",
+        "PINK",
+        "GRAY",
+        "LIGHT_GRAY",
+        "CYAN",
+        "PURPLE",
+        "BLUE",
+        "BROWN",
+        "GREEN",
+        "RED",
+        "BLACK"
+      ]
+    }
+  },
+  "patternProperties": {
+    "^[a-z]+[a-z]$": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "color": {
+          "type": "string",
+          "pattern": "^#+[0123456789abcdef]{6}$"
+        },
+        "bannerColorFirst": {
+          "$ref": "#/definitions/bannerColor"
+        },
+        "bannerColorSecond": {
+          "$ref": "#/definitions/bannerColor"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "color",
+        "bannerColorFirst",
+        "bannerColorSecond"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
