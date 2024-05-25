@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://github.com/archyonix-fun/resources/ElementalWars/schemas/item/2024/05/25/17-51",
   "title": "Action",
   "type": "object",
   "properties": {
