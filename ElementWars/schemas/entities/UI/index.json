@@ -23,7 +23,7 @@
         "^slot\\[+[0-9]+\\]$": {
           "type": "object",
           "patternProperties": {
-            "^[A-Z]+[A-Z]$": {
+            ".*": {
               "type": "object",
               "properties": {
                 "view": {
