@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "$id": "https://github.com/archyonix-fun/resources/ElementalWars/schemas/ui/2024/05/25/17-05",
+  "$id": "https://github.com/archyonix-fun/resources/ElementalWars/schemas/ui/2024/06/09/12-49",
   "title": "UI",
   "type": "object",
   "properties": {
@@ -40,6 +40,9 @@
                   },
                   "additionalProperties": false,
                   "required": ["name"]
+                },
+                "dependencies": {
+                  "type": "array"
                 },
                 "cost": {
                   "$ref": "../RESOURCES/cost.json"
